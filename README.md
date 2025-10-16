@@ -1,2 +1,2 @@
-# alert_-alarm
+# todo-app
 A simple to-do reminder app

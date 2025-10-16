@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List with Recurring Reminders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📝 To-Do List with Recurring Reminders</h1>
+
+  <div>
+    <input type="text" id="taskInput" placeholder="Enter task" required>
+    <input type="date" id="dateInput" required>
+    <input type="number" id="hourInput" min="1" max="12" placeholder="Hour" required>
+    <input type="number" id="minuteInput" min="0" max="59" placeholder="Minute" required>
+    <select id="ampmInput">
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select>
+    <select id="repeatInput">
+      <option value="none">Repeat: None</option>
+      <option value="daily">Repeat: Daily</option>
+      <option value="weekly">Repeat: Weekly</option>
+      <option value="monthly">Repeat: Monthly</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
